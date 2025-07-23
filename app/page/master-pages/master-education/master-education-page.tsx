@@ -104,14 +104,14 @@ export default function MasterEducationPage() {
 
     return (
         <div className="h-full w-full px-6 sm:px-6 py-6 sm:py-6 dark:bg-gray-900 dark:text-white overflow-y-scroll scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200">
-            <div className="flex lg:flex-row flex-col gap-[2rem] lg:h-[100%]">
+            <div className="lg:text-base md:text-lg sm:text-sm flex lg:flex-row flex-col gap-[2rem] lg:h-[100%]">
                 {/* Left Column */}
                 <div className="flex flex-col flex-1 justify-between lg:w-1/2">
                     <div className="flex flex-col flex-1" style={{ width: "100%" }}>
                     </div>
                     <div className="flex flex-col gap-[1rem]">
                         <div>
-                            <h1 className="lg:pt-0 lg:pb-0 pt-[1rem] pb-[1rem] border-black-600 dark:border-black-600" style={{ fontWeight: "700", fontSize: "calc(50dvw/13)", textTransform: "uppercase", borderTop: "5px solid", borderBottom: "1px solid" }}>
+                            <h1 className="lg:pt-3 lg:pb-3 pt-[1rem] pb-[1rem] border-black-600 dark:border-black-600" style={{ fontWeight: "700", fontSize: "calc(50dvw/13)", textTransform: "uppercase", borderTop: "5px solid", borderBottom: "1px solid" }}>
                                 Education
                             </h1>
                         </div>
@@ -138,15 +138,15 @@ export default function MasterEducationPage() {
                 {/* Right Column */}
                 <div className="flex flex-col flex-1 justify-between lg:w-1/2 gap-[1rem]">
                     <div className="flex lg:flex-row flex-col flex-1 gap-[1rem] h-[calc(100dvh-50dvw*9/16)]">
-                        <div className="flex flex-1 gap-[1rem] border-t-4 border-b-4 border-black-600 dark:border-white">
+                        <div className="flex flex-1 gap-[1rem] dark:border-white border-black-600 border-t-4 border-b-4">
                             <div className={`flex-1 relative text-center`} style={{ position: "relative", fontFamily: "auto" }}>
                                 <p
-                                    className="dark:text-white-600 text-black-600 opacity-20 lg:text-[450px] text-[40dvh]"
+                                    className="dark:text-white-100 text-white-100 opacity-20 lg:text-[450px] text-[40dvh]"
                                     style={{
                                         position: "absolute",
                                         top: "60%",
                                         left: "50%",
-                                        transform: "translate(-50%, -40%)",  // centers the element exactly in the middle
+                                        transform: "translate(-50%, -40%)",  // light and subtle
                                         zIndex: 1,
                                         margin: 0,
                                         userSelect: "none",
@@ -170,6 +170,7 @@ export default function MasterEducationPage() {
                         <video src="/videos/cover.mp4" style={{ width: "100%", margin: "auto" }} controls></video>
                     </div>
                 </div>
+
                 <div
                     ref={hiddenRef}
                     className="invisible absolute text-black text-justify"

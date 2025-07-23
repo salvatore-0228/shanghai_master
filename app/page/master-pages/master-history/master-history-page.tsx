@@ -114,8 +114,8 @@ export default function MasterHistoryPage() {
                 <div className="flex lg:flex-row flex-col flex-1 gap-[1rem]">
                     <div className="gap-[1rem] flex flex-col flex-1">
                         <h1 className="dark:border-white-600 border-black-600 lg:text-[2vw] text-[5vh]" style={{ fontWeight: "700", textTransform: "uppercase", borderTop: "5px solid", borderBottom: "1px solid" }}>History</h1>
-                        <div>
-                            <video src="/videos/cover.mp4" style={{ height: "100%", margin: "auto", bottom: "1rem" }} controls></video>
+                        <div className="lg:h-[calc(25dvw*9/16)]">
+                            <video src="/videos/cover.mp4" style={{ height: "100%" }} controls></video>
                         </div>
                         <div className="text-justify">
                             <div className={styles.dropCap}>
@@ -166,7 +166,7 @@ export default function MasterHistoryPage() {
                             {part[4]}
                         </div>
                         <div className="lg:h-[calc(25dvw*9/16)]">
-                            <video src="/videos/cover.mp4" style={{ height: "100%", margin: "auto" }} controls></video>
+                            <video src="/videos/cover.mp4" style={{ height: "100%" }} controls></video>
                         </div>
                     </div>
                 </div>

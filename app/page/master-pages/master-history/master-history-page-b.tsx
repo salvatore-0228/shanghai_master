@@ -128,7 +128,7 @@ export default function MasterHistoryPageB() {
                             {part[0]}
                         </div>
                         <div className="lg:h-[calc(25dvw*9/16)]">
-                            <video src="/videos/cover.mp4" style={{ height: "100%", margin: "auto", bottom: "1rem" }} controls></video>
+                            <video src="/videos/cover.mp4" style={{ height: "100%" }} controls></video>
                         </div>
                     </div>
                     <div className="flex flex-1 lg:w-1/2 text-justify" style={{ textAlignLast: "justify" }} ref={divRef2}>
@@ -161,7 +161,7 @@ export default function MasterHistoryPageB() {
 
                     <div className="flex justify-between flex-col flex-1 gap-[1rem]">
                         <div className="lg:h-[calc(25dvw*9/16)]">
-                            <video src="/videos/cover.mp4" style={{ height: "100%", margin: "auto", bottom: "1rem" }} controls></video>
+                            <video src="/videos/cover.mp4" style={{ height: "100%" }} controls></video>
                         </div>
                         <div className="flex-1 text-justify" ref={divRef5}>
                             {part[4]}

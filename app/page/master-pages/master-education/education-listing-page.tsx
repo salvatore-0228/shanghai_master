@@ -58,7 +58,7 @@ export default function EducationListingPage() {
         <div className="h-full w-full px-4 sm:px-6 py-4 sm:py-6 overflow-y-scroll h-full scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200 dark:bg-gray-900 dark:text-white">
             <div className="flex lg:flex-row flex-col gap-[2rem]">
                 <div className="flex lg:flex-row flex-col flex-1 columns-2 gap-[1rem]">
-                    <div style={{ flex: "1" }}>
+                    <div className="flex-1">
                         <div className="max-w-4xl mx-auto mb-6">
                             <div className="rounded-lg border-white-100 shadow-md p-6 dark:bg-gray-900 dark:text-white dark:border-white dark:border">
                                 {/* Header */}
@@ -136,7 +136,7 @@ export default function EducationListingPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-900 dark:text-white dark:border dark:border-white" style={{ flex: "1" }}>
+                    <div className="bg-white flex-1 rounded-lg shadow-md p-6 dark:bg-gray-900 dark:text-white dark:border dark:border-white">
                         <div className="mb-[2rem]">
                             <p style={{ padding: "1rem" }}>Address: No. 1500 Yao Long Road (near the Oriental Sports Center) Pudong</p>
                             <div className="w-full h-[30vh] rounded-2xl overflow-hidden shadow-lg">
