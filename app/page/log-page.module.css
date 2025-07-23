@@ -1,0 +1,24 @@
+.fullscreenVideo {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* @media (max-width: 768px) {
+  .fullscreenVideo {
+    object-fit: contain;
+    background-color: black;
+  }
+} */
+
+@media (max-width: 768px) {
+  .fullscreenVideo {
+    width: 100%;
+    object-fit: cover;
+    object-position: 52% center;
+  }
+}

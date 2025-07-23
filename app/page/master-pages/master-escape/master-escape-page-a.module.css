@@ -1,0 +1,139 @@
+.pageContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.leftText {
+  flex: 2;
+  display: flex;
+  flex-direction: column; 
+  text-align: justify;
+}
+
+.leftVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.rightTop {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex: 1.2;
+}
+
+.rightText {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  text-align: justify;
+}
+
+.rightVideo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.rightBottomVideo {
+  flex: 2;
+  border: 2px solid #222;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aspect16x9 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dropCap {
+  position: relative;
+}
+
+.firstLetter {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 2rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+  }
+  .leftColumn,
+  .centerColumn,
+  .rightColumn {
+    flex-direction: column;
+    flex: unset;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .rightColumn {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .rightTop {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .leftTitle h1 {
+    font-size: 1.5rem !important;
+    border-top-width: 3px !important;
+    border-bottom-width: 1px !important;
+  }
+  .centerText,
+  .leftText,
+  .rightText {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+  .aspect16x9 {
+    max-width: 100%;
+  }
+  .leftpage {
+    flex-direction: column;
+  }
+}
